@@ -18,6 +18,9 @@ namespace llm {
 namespace serve {
 
 using namespace tvm::runtime;
+using tvm::ffi::GetRef;
+using tvm::ffi::Object;
+using tvm::ffi::ObjectRef;
 
 typedef TypedFunction<void(Array<RequestStreamOutput>)> FRequestStreamCallback;
 
